@@ -4,8 +4,6 @@ const increaseBtn = document.querySelector("#increaseBtn");
 const number = document.querySelector("#number");
 const input = document.querySelector("#input");
 
-const value = parseInt(input.value);
-
 increaseBtn.addEventListener("click", () => {
   const value = parseInt(input.value);
   number.innerHTML = parseInt(number.innerHTML) + value;
@@ -23,7 +21,10 @@ decreaseBtn.addEventListener("click", () => {
 resetBtn.addEventListener("click", () => {
   number.innerHTML = 0;
   decreaseBtn.classList.remove("bg-red-500");
-  increaseBtn.classList.remove("bg-green-400");
+    increaseBtn.classList.remove("bg-green-400");
+    input.value=0
 });
+
+
 
 
