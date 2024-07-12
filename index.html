@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-br from-purple-400 via-blue-300 to-purple-500 w-screen h-screen"
+  >
+    <div class="w-[500px] mx-auto bg-gray-200 mt-20 rounded-md p-10">
+      <div class="flex justify-center items-center flex-col">
+        <p class="text-3xl font-bold mb-8">Counter</p>
+        <p class="text-green-500 mb-4 font-bold text-7xl" id="number">0</p>
+        <input
+        id="input"
+          type="text"
+          class="pl-2 rounded-lg outline-none py-2"
+          id="stepSize"
+          value="1"
+        />
+        <div class="flex space-x-10 mt-6">
+          <button
+            class="py-2 border border-black font-semibold px-2 rounded-lg"
+            id="decreaseBtn"
+          >
+            Decrease
+          </button>
+          <button
+            class="py-2 border border-black font-semibold px-2 rounded-lg"
+            id="resetBtn"
+          >
+            Reset
+          </button>
+          <button
+            class="py-2 border border-black font-semibold px-2 rounded-lg"
+            id="increaseBtn"
+          >
+            Increase
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
